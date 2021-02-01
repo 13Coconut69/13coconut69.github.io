@@ -1,0 +1,146 @@
+* {
+    font-family: Futura,sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+header.loaded {
+    transition: height 1s ease-in;
+    height: 1vh;
+}
+
+.logo {
+    padding: 10px;
+    border: 20px solid #fff;
+    box-sizing: border-box;
+    font-size: calc(100vw / 8);
+}
+
+.logo.loaded {
+    transition: font-size 0.9s ease-in, border-width 1s ease-in;
+    font-size: calc(100vw / 25);
+    border-width: 5px;
+}
+
+.content {
+    display: none;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 20px 80px;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin-right: 0.5em;
+}
+
+.content > p, div{
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.projects {
+    text-align: left;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+}
+
+.project div{
+    margin-top: 0;
+}
+
+.project img {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.text {
+    min-width: 0;
+}
+
+.projectName {
+    font-size: 20px;
+}
+
+.projectDesc {
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(189, 189, 189);
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15%;
+    }
+
+    .logo {
+        border: 10px solid #fff;
+        font-size: calc(100vw / 6.5);
+    }
+
+    .logo.loaded {
+        font-size: calc(100vw / 11);
+    }
+    .content {
+        padding: 20px 30px;
+    }
+}
