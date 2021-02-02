@@ -88,6 +88,7 @@ header.loaded {
 .project {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .project div{
@@ -124,12 +125,14 @@ header.loaded {
 
 .icon {
     margin: 0 10px;
+    cursor: pointer;
 }
+
 
 
 @media (max-width: 1024px) {
     header {
-        padding: 15%;
+        padding-top: 15%;
     }
 
     .logo {
