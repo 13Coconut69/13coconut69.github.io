@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,system-ui,Helvetica Neue,Roboto,sans-serif;
+}
+
+body {
+    background-color: rgb(236, 235, 235);
+}
+
+#main {
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(236, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    padding: 5%;
+}
+
+
+.wheelPanel {
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#wheel {
+    transition: transform 3s;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons:nth-child(1) {
+    margin-right: 30px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button-small {
+    width: 60px;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.button-blue {
+    background-color: #3144eb;
+}
+
+.button-red {
+    background-color: #e61029;
+}
+
+.button-green {
+    background-color: #00ba06;
+}
+
+.panelHeader {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#amount {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    max-width: 400px;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.percents {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.percentsPanel {
+    border-radius: 30px;
+    max-width: 450px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.percent {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentRed {
+    color: #e61029;
+}
+
+.percentBlue {
+    color: #3144eb;
+}
+
+#bluePercent, #redPercent {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.tickets {
+    margin-top: 5px;
+    color:rgb(20, 20, 20);
+    font-size: 12px;
+}
+
+.userPanel {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 30px;
+    max-width: 450px;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.balance {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#balance {
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.lastGamesPanel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 30px;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.lastGames {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.lastGame {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.lastGameRed {
+    background-color: #e61029;
+}
+
+.lastGameBlue {
+    background-color: #3144eb;
+}
+
+#timer {
+    position: absolute;
+    top: calc(50% - 40px);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.balancePanel {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: column;
+}
+
+#balanceForPanel {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
